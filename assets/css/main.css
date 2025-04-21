@@ -723,6 +723,14 @@ input, select, textarea {
   transform: scale(1.05);
 }
 
+#header .coming-soon {
+  font-size: 1.7em;
+  margin: 1em 0 1.5em 0;
+  color: #fff;
+  opacity: 1.0;
+}
+
+
 
 /* Footer */
 
