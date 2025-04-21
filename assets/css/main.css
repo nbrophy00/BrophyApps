@@ -57,7 +57,8 @@ body {
 
 mark {
 	background-color: transparent;
-	color: inherit;
+	/*color: inherit;*/
+	color: #171717
 }
 
 input::-moz-focus-inner {
@@ -691,8 +692,9 @@ input, select, textarea {
 				}
 
 					#header nav a:hover:before {
-						background-color: rgba(0, 0, 0, 0.35);
-						color: #fff;
+						border-color: #0f8fcc;
+						/*background-color: rgba(0, 0, 0, 0.35);*/
+						color: #0f8fcc;
 					}
 
 				#header nav a:active {
