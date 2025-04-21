@@ -712,9 +712,9 @@ input, select, textarea {
 
 				#header nav img {
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 7px;
   transition: all 0.25s ease-in-out;
-  height: 60px;
+  height: 55px;
 					border-color: #a6a6a6;
 }
 
