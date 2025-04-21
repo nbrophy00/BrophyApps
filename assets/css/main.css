@@ -1093,4 +1093,12 @@ input, select, textarea {
 
 		#header nav {
 			padding: 0 1em;
-		} }
+		}
+		
+		#header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+}
