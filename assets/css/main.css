@@ -589,7 +589,7 @@ input, select, textarea {
 				opacity: 0;
 				position: relative;
 				top: 0;
-				width: 5.35em;
+				width: 11.35em;
 			}
 
 				#header nav li:nth-child(1) {
@@ -709,6 +709,20 @@ input, select, textarea {
 				#header nav a span {
 					display: none;
 				}
+
+				#header nav img {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  height: 60px;
+					border-color: #a6a6a6;
+}
+
+#header nav img:hover {
+  border-color: #0f8fcc;
+  transform: scale(1.05);
+}
+
 
 /* Footer */
 
