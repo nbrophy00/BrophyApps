@@ -3,8 +3,8 @@
   "short_name": "SongBank",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#121212",
-  "theme_color": "#121212",
+  "background_color": "#252525",
+  "theme_color": "#252525",
   "icons": [
     {
       "src": "assets/css/images/favicon-96x96.png",
