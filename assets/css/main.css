@@ -1216,6 +1216,7 @@ a:hover {
 	z-index: 1001;
 	background-color: transparent;
 	padding: 0.5rem;
+	margin-left: -0.8rem;
 	border-radius: 8px;
 	cursor: pointer;
 	display: flex;
@@ -1226,8 +1227,8 @@ a:hover {
 }
 
 #menu-toggle img {
-	height: 28px;
-	width: 28px;
+	height: 32px;
+	width: 32px;
 	filter: brightness(0) invert(1);
 	transition: filter 0.2s ease;
 }

@@ -21,6 +21,15 @@
       display: flex;
       align-items: center;
       padding: 0 1rem;
+      position: relative;
+    }
+
+    #header-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 32px;
+      /* adjust as needed */
     }
 
     .divider {
@@ -31,6 +40,7 @@
     #menu-toggle {
       background-color: transparent;
       padding: 0.5rem;
+      margin: -1.0rem;
       border-radius: 8px;
       cursor: pointer;
       display: flex;
@@ -46,8 +56,8 @@
     }
 
     #menu-toggle img {
-      height: 24px;
-      width: 24px;
+      height: 32px;
+      width: 32px;
       filter: brightness(0) invert(1);
       transition: opacity 0.2s ease;
     }
@@ -96,7 +106,7 @@
 
     main {
       margin: auto;
-      padding: 1.5rem;
+      padding: 0.5rem;
     }
 
     h1 {
@@ -129,6 +139,7 @@
     <div id="menu-toggle">
       <img src="../css/images/menu.png" alt="Menu" />
     </div>
+    <img id="header-logo" src="../css/images/logo.png" alt="SongBank Logo" />
   </header>
   <div class="divider"></div>
 
