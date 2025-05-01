@@ -24,6 +24,18 @@
 
 <body class="is-preload">
 	<div id="wrapper">
+		<!-- Side Menu Button and Drawer -->
+		<div id="menu-toggle">
+			<img src="assets/css/images/menu.png" alt="Menu" />
+		</div>
+
+		<nav id="side-drawer">
+			<ul>
+				<li><a href="assets/pages/songbank_terms_of_service.html">Terms of Service</a></li>
+				<!-- Add more links here -->
+			</ul>
+		</nav>
+
 		<div id="bg"></div>
 		<div id="overlay"></div>
 		<div id="main">
@@ -66,6 +78,26 @@
 		window.onload = function () { document.body.classList.remove('is-preload'); }
 		window.ontouchmove = function () { return false; }
 		window.onorientationchange = function () { document.body.scrollTop = 0; }
+
+		window.onload = function () {
+			document.body.classList.remove('is-preload');
+		};
+
+		window.ontouchmove = function () {
+			return false;
+		};
+
+		window.onorientationchange = function () {
+			document.body.scrollTop = 0;
+		};
+
+		// Toggle drawer logic
+		const toggleButton = document.getElementById('menu-toggle');
+		const drawer = document.getElementById('side-drawer');
+
+		toggleButton.addEventListener('click', () => {
+			drawer.classList.toggle('open');
+		});
 	</script>
 </body>
 

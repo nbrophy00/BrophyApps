@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SongBank | Terms of Service</title>
   <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -14,9 +15,88 @@
       color: #f0f0f0;
     }
 
+    header {
+      height: 50px;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #333333;
+    }
+
+    #menu-toggle {
+      background-color: transparent;
+      padding: 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.1s ease;
+    }
+
+    #menu-toggle:active {
+      transform: scale(0.95);
+    }
+
+    #menu-toggle img {
+      height: 24px;
+      width: 24px;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.2s ease;
+    }
+
+    #menu-toggle:active img {
+      opacity: 0.5;
+    }
+
+    #side-drawer {
+      position: fixed;
+      top: 51px;
+      /* below header + divider */
+      left: 0;
+      width: 200px;
+      height: calc(100% - 51px);
+      background-color: #171717;
+      color: #f0f0f0;
+      z-index: 1000;
+      transform: translateX(-100%);
+      /* start fully hidden */
+      transition: transform 0.3s ease-in-out;
+      padding: 2rem 1rem;
+      box-shadow: none;
+    }
+
+    #side-drawer.open {
+      transform: translateX(0);
+      /* slides it into view */
+    }
+
+    #side-drawer ul {
+      list-style: none;
+      padding: 2rem 0 0 0;
+      margin: 0;
+    }
+
+    #side-drawer li {
+      margin: 1rem 0;
+    }
+
+    #side-drawer a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
     main {
       margin: auto;
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     h1 {
@@ -24,8 +104,8 @@
       font-size: 35px;
       font-weight: 400;
       margin-bottom: 2rem;
-	white-space: nowrap;
-  	overflow-x: auto; 
+      white-space: nowrap;
+      overflow-x: auto;
     }
 
     h2 {
@@ -42,42 +122,79 @@
     }
   </style>
 </head>
+
 <body>
+
+  <header>
+    <div id="menu-toggle">
+      <img src="../css/images/menu.png" alt="Menu" />
+    </div>
+  </header>
+  <div class="divider"></div>
+
+  <!-- Side Drawer -->
+  <nav id="side-drawer">
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+    </ul>
+  </nav>
+
   <main>
     <h1>TERMS OF SERVICE</h1>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By accessing and using the SongBank app or website, you agree to comply with these Terms of Service. If you do not agree, you must not use our services.</p>
+    <p>By accessing and using the SongBank app or website, you agree to comply with these Terms of Service. If you do
+      not agree, you must not use our services.</p>
 
     <h2>2. Use of Service</h2>
-    <p>You are permitted to use SongBank for personal, non-commercial, and lawful purposes only. Any misuse, including reverse engineering or unauthorized access, is prohibited.</p>
+    <p>You are permitted to use SongBank for personal, non-commercial, and lawful purposes only. Any misuse, including
+      reverse engineering or unauthorized access, is prohibited.</p>
 
     <h2>3. Account Responsibilities</h2>
-    <p>You are solely responsible for keeping your account credentials confidential. SongBank is not liable for any loss resulting from unauthorized account use.</p>
+    <p>You are solely responsible for keeping your account credentials confidential. SongBank is not liable for any loss
+      resulting from unauthorized account use.</p>
 
     <h2>4. Intellectual Property</h2>
-    <p>All intellectual property including trademarks, logos, and software used in SongBank are owned by us or our licensors. Reproduction or modification without written permission is not allowed.</p>
+    <p>All intellectual property including trademarks, logos, and software used in SongBank are owned by us or our
+      licensors. Reproduction or modification without written permission is not allowed.</p>
 
     <h2>5. Termination</h2>
-    <p>We may suspend or terminate access to SongBank at any time, with or without notice, for any reason including breach of these Terms.</p>
+    <p>We may suspend or terminate access to SongBank at any time, with or without notice, for any reason including
+      breach of these Terms.</p>
 
     <h2>6. Modifications to Service</h2>
-    <p>We reserve the right to change or discontinue any part of the SongBank service at any time. We are not responsible for any impacts these changes may cause.</p>
+    <p>We reserve the right to change or discontinue any part of the SongBank service at any time. We are not
+      responsible for any impacts these changes may cause.</p>
 
     <h2>7. Disclaimer of Warranties</h2>
-    <p>The SongBank service is provided "as is" without any warranties. We do not guarantee uninterrupted or error-free service.</p>
+    <p>The SongBank service is provided "as is" without any warranties. We do not guarantee uninterrupted or error-free
+      service.</p>
 
     <h2>8. Limitation of Liability</h2>
-    <p>SongBank is not liable for indirect, incidental, or consequential damages arising from use of the service, to the fullest extent permitted by law.</p>
+    <p>SongBank is not liable for indirect, incidental, or consequential damages arising from use of the service, to the
+      fullest extent permitted by law.</p>
 
     <h2>9. Governing Law</h2>
-    <p>These Terms are governed by the laws of the State of California, without regard to conflict of law principles.</p>
+    <p>These Terms are governed by the laws of the State of California, without regard to conflict of law principles.
+    </p>
 
     <h2>10. Revisions</h2>
-    <p>We may revise these Terms from time to time. Continued use of SongBank constitutes acceptance of the updated terms.</p>
+    <p>We may revise these Terms from time to time. Continued use of SongBank constitutes acceptance of the updated
+      terms.</p>
 
     <h2>11. Contact Information</h2>
-    <p>For questions or concerns, contact us at <a href="mailto:support@songbank-app.com" style="color: #f0f0f0;">support@songbank-app.com</a>.</p>
+    <p>For questions or concerns, contact us at <a href="mailto:support@songbank-app.com"
+        style="color: #f0f0f0;">support@songbank-app.com</a>.</p>
   </main>
+
+  <script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const drawer = document.getElementById('side-drawer');
+
+    toggleButton.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+  </script>
 </body>
+
 </html>
