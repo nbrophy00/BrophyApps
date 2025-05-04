@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -197,7 +197,7 @@ textarea {
 	color: #f0f0f0;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15pt;
-	font-weight: 300 !important;
+	font-weight: 400 !important;
 	letter-spacing: -0.025em;
 	line-height: 1.75em;
 }
@@ -1531,8 +1531,7 @@ body.terms-page * {
 }
 
 .footer-icons img {
-  height: 20px;
-  opacity: 0.8;
+  height: 24px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
