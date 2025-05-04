@@ -1444,6 +1444,15 @@ main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer
 	main.terms-content p {
 	  margin-top: 1.05rem;
 	}
+
+	#menu-toggle img {
+		height: 30px;
+		width: 30px;
+	}
+
+	#menu-toggle {
+		left: 0rem;
+	}
   }
   
   body.terms-page,
