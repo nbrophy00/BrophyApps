@@ -499,14 +499,14 @@ main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer
 /* Header */
 
 .index-header {
-	height: 64px;
+	height: 50px;
 	min-height: 50px;
-	max-height: 64px;
+	max-height: 50px;
 	background-color: transparent;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	padding: 0 1.5rem;
+	justify-content: space-between;
+	padding: 0 1.5rem; /* consistent padding */
 	position: relative;
 	z-index: 1001;
 	flex-shrink: 0;
@@ -1317,8 +1317,8 @@ main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 34px;
-	max-height: 34px;
+	height: 32px;
+	max-height: 32px;
 	pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
@@ -1326,8 +1326,8 @@ main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer
   }
   
   #menu-toggle img {
-	height: 24px;
-	width: 24px;
+	height: 32px;
+	width: 32px;
 	filter: brightness(0) invert(1);
 	transition: opacity 0.2s ease;
   }
