@@ -1212,7 +1212,7 @@ a:hover {
 #menu-toggle {
 	position: absolute; /* not fixed anymore */
 	top: 50%;
-	left: 0.6rem;
+	left: 0.5rem;
 	transform: translateY(-50%);
 	z-index: 1001;
 	background-color: transparent;
@@ -1317,9 +1317,9 @@ a:hover {
   }
   
   .terms-header {
-	height: 64px;
+	height: 67px;
 	min-height: 50px;
-	max-height: 64px;
+	max-height: 67px;
 	background-color: #000000;
 	display: flex;
 	align-items: center;
