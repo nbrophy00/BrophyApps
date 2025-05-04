@@ -1381,6 +1381,16 @@ a:hover {
 	color: #f0f0f0;
 	text-decoration: none;
   }
+
+  @media screen and (max-width: 736px) {
+	main.terms-content h1 {
+	  margin-bottom: 2rem; /* increase as needed */
+	}
+  
+	main.terms-content h2 {
+	  margin-top: 2rem; /* avoid upward pull */
+	}
+  }
   
   body.terms-page,
 body.terms-page * {
