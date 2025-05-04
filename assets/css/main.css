@@ -1367,8 +1367,8 @@ a:hover {
 	  margin-top: 0.5rem;
 	}
 
-	main.terms-content h2 {
-		margin-top: 1.5rem;
+	main.terms-content h1 {
+		margin-bottom: 1.5rem;
 	  }
   }
   
