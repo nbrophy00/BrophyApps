@@ -1331,7 +1331,7 @@ a:hover {
   }
   
   .divider {
-	height: 0.5px;
+	height: 1px;
 	background-color: #333333;
 	flex-shrink: 0;
 	z-index: 1000;
@@ -1368,7 +1368,7 @@ a:hover {
 	}
 
 	main.terms-content h1 {
-		margin-bottom: 1.1rem;
+		margin-bottom: 1.3rem;
 	  }
   }
   
