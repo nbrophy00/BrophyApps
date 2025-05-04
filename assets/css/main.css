@@ -1364,11 +1364,11 @@ a:hover {
 
   @media screen and (max-width: 736px) {
 	main.terms-content h1 {
-	  margin-top: 0.3rem;
+	  margin-top: 0.4rem;
 	}
 
 	main.terms-content h1 {
-		margin-bottom: 2rem;
+		margin-bottom: 1.6rem;
 	  }
   }
   
