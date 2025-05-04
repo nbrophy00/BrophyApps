@@ -1226,13 +1226,6 @@ a:hover {
 	height: 48px;
   }
 
-#menu-toggle img {
-	height: 24px;
-	width: 24px;
-	filter: brightness(0) invert(1);
-	transition: filter 0.2s ease;
-}
-
 #menu-toggle:active img {
 	opacity: 0.5;
 	/* Dim the icon when pressed */
@@ -1307,14 +1300,9 @@ header.terms-header {
 	user-select: none;
   }
   
-  .divider {
-	height: 1px;
-	background-color: #333333;
-  }
-  
   #menu-toggle img {
-	height: 32px;
-	width: 32px;
+	height: 24px;
+	width: 24px;
 	filter: brightness(0) invert(1);
 	transition: opacity 0.2s ease;
   }
@@ -1352,7 +1340,7 @@ header.terms-header {
   }
   
   .divider {
-	height: 1px;
+	height: 1.5px;
 	background-color: #333333;
 	flex-shrink: 0;
 	z-index: 1000;
