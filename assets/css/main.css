@@ -479,6 +479,23 @@ a:hover {
 	width: 1px;
 }
 
+main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer *):not(nav):not(nav *) {
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	pointer-events: none;
+  }
+  
+  main.terms-content a,
+  #index-header a,
+  #menu-toggle,
+  #side-drawer,
+  #side-drawer * {
+	pointer-events: auto;
+	user-select: auto;
+  }
+
 /* Header */
 
 .index-header {
