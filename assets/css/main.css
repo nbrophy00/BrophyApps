@@ -481,6 +481,20 @@ a:hover {
 
 /* Header */
 
+.index-header {
+	height: 64px;
+	min-height: 50px;
+	max-height: 64px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 1.5rem;
+	position: relative;
+	z-index: 1001;
+	flex-shrink: 0;
+  }
+
 @-moz-keyframes header {
 	0% {
 		-moz-transform: translate3d(0, 1em, 0);
@@ -1286,8 +1300,8 @@ a:hover {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 32px;
-	max-height: 32px;
+	height: 34px;
+	max-height: 34px;
 	pointer-events: none;
   user-select: none;
   -webkit-user-select: none;

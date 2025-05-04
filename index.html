@@ -11,41 +11,38 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<!--<link rel="icon" type="image/png" href="/assets/css/images/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/assets/css/images/favicon.svg" />
-		<link rel="shortcut icon" href="/assets/css/images/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/css/images/apple-touch-icon.png" />
-		<link rel="manifest" href="/assets/css/images/site.webmanifest" />-->
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<link rel="icon" type="image/png" href="assets/css/images/sb-favicon-radius.png">
 </head>
 
-<body class="is-preload">
+<body class="is-preload index-page">
 	<div id="wrapper">
-		<!-- Side Menu Button and Drawer -->
-		<div id="menu-toggle">
-			<img src="assets/css/images/menu-3.png" alt="Menu"
-			style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
-		</div>
 
+		<!-- Transparent Header with Menu -->
+		<div class="index-header">
+			<div id="menu-toggle">
+				<img src="assets/css/images/menu-3.png" alt="Menu"
+					style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+			</div>
+		</div>
+		<div class="divider"></div>
+
+		<!-- Side Drawer -->
 		<nav id="side-drawer">
 			<ul>
 				<li><a href="assets/pages/songbank_terms_of_service.html">Terms of Service</a></li>
-				<!-- Add more links here -->
 			</ul>
 		</nav>
 
 		<div id="bg"></div>
 		<div id="overlay"></div>
-		<div id="main">
 
+		<div id="main">
 			<!-- Header -->
 			<header id="header">
 				<h1>
 					<img src="assets/css/images/logo.svg" alt="SongBank"
-					style="max-width: 80%; height: auto; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+						style="max-width: 80%; height: auto; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
 				</h1>
 
 				<p>Income Management&nbsp; •&nbsp; Royalty Aggregation&nbsp; •&nbsp; Catalog Valuation</p>
@@ -53,15 +50,13 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="" target="_blank">
-								<img src="assets/css/images/app_store.png" alt="Download on the App Store"
-									style="height: 55px;" />
+							<a href="https://www.apple.com/app-store/" target="_blank">
+								<img src="assets/css/images/app_store.png" alt="Download on the App Store" style="height: 55px;" />
 							</a>
 						</li>
 						<li>
-							<a href="" target="_blank">
-								<img src="assets/css/images/google_play_store.png" alt="Get it on Google Play"
-									style="height: 55px;" />
+							<a href="https://play.google.com/store/apps" target="_blank">
+								<img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" style="height: 55px;" />
 							</a>
 						</li>
 					</ul>
@@ -70,33 +65,21 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<span class="copyright">&copy; SongBank : <a href="http://songbank-app">&nbsp;v.1.0.0&nbsp;
-						2025</a></span>
+				<span class="copyright">&copy; SongBank : v.1.0.0&nbsp;2025</span>
 			</footer>
-
 		</div>
 	</div>
-	<script>
-		window.onload = function () { document.body.classList.remove('is-preload'); }
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
 
+	<script>
 		window.onload = function () {
 			document.body.classList.remove('is-preload');
 		};
-
-		window.ontouchmove = function () {
-			return false;
-		};
-
-		window.onorientationchange = function () {
-			document.body.scrollTop = 0;
-		};
+		window.ontouchmove = function () { return false; };
+		window.onorientationchange = function () { document.body.scrollTop = 0; };
 
 		// Toggle drawer logic
 		const toggleButton = document.getElementById('menu-toggle');
 		const drawer = document.getElementById('side-drawer');
-
 		toggleButton.addEventListener('click', () => {
 			drawer.classList.toggle('open');
 		});
