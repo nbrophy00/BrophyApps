@@ -1398,6 +1398,26 @@ a:hover {
 	text-decoration: none;
   }
 
+  .contact-info {
+	margin-bottom: 2.5rem;
+	font-size: 0.95rem;
+	color: #ababab;
+  }
+
+  .support-link {
+	color: #f0f0f0;
+	text-decoration: none;
+	transition: color 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .support-link:hover {
+	color: #0f8fcc;
+  }
+  
+  .support-link:active {
+	opacity: 0.6;
+  }
+
   @media screen and (max-width: 736px) {
 	main.terms-content h1 {
 	  margin-top: 0.4rem;
@@ -1415,73 +1435,84 @@ body.terms-page * {
 }
 
 /* App Store Container */
+.store-download-container,
+.terms-footer,
+.terms-divider {
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  background-color: #000;
+}
+
 .store-download-container {
-	background-color: #000000;
-	padding: 2rem 1.2rem 2.5rem;
-	text-align: center;
+  padding: 2rem 1rem;
+}
+
+.store-download-inner {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.store-download-inner img {
+  height: 48px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.store-download-inner img {
+	height: 48px;
+	border-radius: 7px;
+	border: 1px solid #a6a6a6;
+	transition: all 0.25s ease-in-out;
   }
   
-  .store-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 1.5rem;
-	flex-wrap: wrap;
-	margin-bottom: 1rem;
-  }
-  
-  .store-buttons img {
-	height: 50px;
-	transition: transform 0.2s ease;
-  }
-  
-  .store-buttons img:hover {
+  .store-download-inner img:hover {
+	border-color: #0f8fcc;
 	transform: scale(1.05);
   }
   
-  .store-note {
-	font-size: 13px;
-	color: #ababab;
-	max-width: 500px;
-	margin: 0 auto;
-	line-height: 1.4;
-  }
-  
-  /* Divider Above Footer */
-  .terms-divider {
-	height: 1px;
-	background-color: #333333;
-	margin: 0;
-  }
-  
-  /* Footer Container */
-  .terms-footer {
-	background-color: #000000;
-	padding: 1.5rem;
+  .store-download-description {
+	margin-top: 1.5rem;
 	text-align: center;
+	font-size: 0.95rem;
 	color: #ababab;
+	line-height: 1.4;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
   }
-  
-  .terms-footer p {
-	font-size: 13px;
-	margin-bottom: 1rem;
-  }
-  
-  .social-icons {
-	display: flex;
-	justify-content: center;
-	gap: 1.5rem;
-	margin-top: 0.5rem;
-  }
-  
-  .social-icons img {
-	width: 24px;
-	height: 24px;
-	filter: brightness(0) invert(1);
-	opacity: 0.85;
-	transition: opacity 0.2s ease;
-  }
-  
-  .social-icons img:hover {
-	opacity: 1;
-  }
+
+/* Divider */
+.terms-divider {
+  height: 1px;
+  background-color: #414141;
+}
+
+/* Footer */
+.terms-footer {
+  text-align: center;
+  color: #ababab;
+  font-size: 0.85rem;
+  padding: 1.75rem 1rem;
+}
+
+.footer-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.footer-icons img {
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
   
