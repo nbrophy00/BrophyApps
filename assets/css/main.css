@@ -1365,16 +1365,14 @@ a:hover {
   @media screen and (max-width: 736px) {
 	main.terms-content h1 {
 	  margin-top: 0.4rem;
+	  margin-bottom: 1.4rem;
 	}
-
-	main.terms-content h1 {
-		margin-bottom: 1.4rem;
-	  }
-
-	  main.terms-content p {
-		margin-top: 2rem;
-	  }
+  
+	main.terms-content p {
+	  margin-top: 2rem;
+	}
   }
+  
   
   main.terms-content h2 {
 	font-size: 22px;
