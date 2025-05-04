@@ -1414,4 +1414,74 @@ body.terms-page * {
   font-family: 'Lato', sans-serif !important;
 }
 
+/* App Store Container */
+.store-download-container {
+	background-color: #000000;
+	padding: 2rem 1.2rem 2.5rem;
+	text-align: center;
+  }
+  
+  .store-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+  }
+  
+  .store-buttons img {
+	height: 50px;
+	transition: transform 0.2s ease;
+  }
+  
+  .store-buttons img:hover {
+	transform: scale(1.05);
+  }
+  
+  .store-note {
+	font-size: 13px;
+	color: #ababab;
+	max-width: 500px;
+	margin: 0 auto;
+	line-height: 1.4;
+  }
+  
+  /* Divider Above Footer */
+  .terms-divider {
+	height: 1px;
+	background-color: #333333;
+	margin: 0;
+  }
+  
+  /* Footer Container */
+  .terms-footer {
+	background-color: #000000;
+	padding: 1.5rem;
+	text-align: center;
+	color: #ababab;
+  }
+  
+  .terms-footer p {
+	font-size: 13px;
+	margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 0.5rem;
+  }
+  
+  .social-icons img {
+	width: 24px;
+	height: 24px;
+	filter: brightness(0) invert(1);
+	opacity: 0.85;
+	transition: opacity 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+	opacity: 1;
+  }
   
