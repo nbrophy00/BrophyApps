@@ -1370,6 +1370,10 @@ a:hover {
 	main.terms-content h1 {
 		margin-bottom: 1.4rem;
 	  }
+
+	  main.terms-content p {
+		margin-top: 1.4rem;
+	  }
   }
   
   main.terms-content h2 {
