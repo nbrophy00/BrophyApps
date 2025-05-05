@@ -1446,12 +1446,18 @@ main.terms-content *:not(a):not(#menu-toggle):not(#side-drawer):not(#side-drawer
 	list-style-type: disc;
 	padding-left: 1.5rem; /* Reduced left space */
 	margin: 0;
+	white-space: normal;
+  	overflow-wrap: break-word;
   }
 
   .bank-privacy-section li {
-	font-size: 0.95rem;
-	vertical-align: middle;
-  }
+  font-size: 0.95rem;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
   .bank-privacy-section li::marker {
 	font-size: 1.1em; /* enlarges bullet size */
