@@ -3,14 +3,14 @@
     "apps": [],
     "details": [
       {
-        "appID": "D837G2DH5Q.com.mongodb.songbank",
+        "appID": "D837G2DH5Q.com.songbank.app",
         "paths": [ "*" ]
       }
     ]
   },
   "webcredentials": {
     "apps": [
-      "D837G2DH5Q.com.mongodb.songbank"
+      "D837G2DH5Q.com.songbank.app"
     ]
   }
 }
