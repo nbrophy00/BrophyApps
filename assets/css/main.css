@@ -1548,10 +1548,6 @@ main.terms-content a:active {
 	#menu-toggle {
 		left: -0.2rem;
 	}
-
-	.bank-privacy-section li {
-		/*margin-bottom: 0.5rem;*/
-	}
 }
 
 body.terms-page,
