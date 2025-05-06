@@ -1482,15 +1482,9 @@ main.terms-content a:active {
 	color: inherit;
 }
 
-.contact-info {
-	margin-bottom: 2.5rem;
-	font-size: 0.95rem;
-	color: #ababab;
-}
-
 .bank-privacy-section {
 	background-color: #2a2a2a;
-	padding: 0.5rem 1rem 1.3rem 1.25rem;
+	padding: 1rem 1rem 0.5rem 1.25rem;
 	margin-top: 1.25rem;
 	font-size: 15px;
 }
@@ -1505,7 +1499,7 @@ main.terms-content a:active {
 
 .bank-privacy-section li {
 	vertical-align: middle;
-	/*margin-bottom: 0.5rem;*/
+	margin-bottom: 0.5rem;
 	white-space: normal;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -1523,6 +1517,12 @@ main.terms-content a:active {
 	transition: color 0.2s ease;
 }
 
+.contact-info {
+	margin-bottom: 2.5rem;
+	font-size: 0.95rem;
+	color: #ababab;
+}
+
 @media screen and (max-width: 736px) {
 	.index-header {
 		height: 50px;
@@ -1536,7 +1536,7 @@ main.terms-content a:active {
 		margin-bottom: 1.45rem;
 	}
 
-	main.terms-content p {
+	main.terms-content h2 {
 		margin-top: 1.05rem;
 	}
 
@@ -1550,7 +1550,7 @@ main.terms-content a:active {
 	}
 
 	.bank-privacy-section li {
-		margin-bottom: 0.5rem;
+		/*margin-bottom: 0.5rem;*/
 	}
 }
 
@@ -1565,7 +1565,7 @@ body.terms-page * {
 .terms-divider {
 	width: 100vw;
 	margin-left: calc(-1 * (100vw - 100%) / 2);
-	background-color: #000;
+	background-color: #0f0f0f;
 }
 
 .store-download-container {
