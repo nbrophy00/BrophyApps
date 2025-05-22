@@ -864,8 +864,12 @@ body.terms-page * {
   transform: scale(1.1);
 }
 
+/* === Policy Spacer === */
 .spacer-sm {
   height: 0.15rem;
+}
+.spacer-sm2 {
+  height: 0.19rem;
 }
 .spacer-md {
   height: 0.7rem;
@@ -875,4 +879,24 @@ body.terms-page * {
 }
 .spacer-xl {
   height: 3rem;
+}
+
+/* === Terms Spacer === */
+.terms-spacer-sm {
+  height: 0.19rem;
+}
+.terms-spacer-md {
+  height: 0.15rem;
+}
+.terms-spacer-lg {
+  height: 1rem;
+}
+.terms-spacer-xl {
+  height: 1.15rem;
+}
+.terms-spacer-2xl {
+  height: 1.3rem;
+}
+.terms-spacer-3xl {
+  height: 2.55rem;
 }
