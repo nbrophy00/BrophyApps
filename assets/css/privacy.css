@@ -725,7 +725,7 @@ main.terms-content a:active {
 
 .bank-privacy-section {
   background-color: #2e2e2e;
-  padding: 1.3rem 0.7rem 1rem 1.3rem;
+  padding: 0.7rem 0.7rem 1rem 1.3rem;
   margin-top: 1.2rem;
   font-size: 15px;
 }
@@ -739,9 +739,8 @@ main.terms-content a:active {
 }
 
 .bank-privacy-section li {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   padding: 0;
-  line-height: 1.1; /* Adjust this to control vertical spacing */
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -749,6 +748,7 @@ main.terms-content a:active {
 
 .bank-privacy-section a {
   letter-spacing: 0.001px;
+  line-height: 1.1; /* Adjust this to control vertical spacing */
   color: #bbbbbb;
   text-decoration: none;
   transition: color 0.2s ease;
