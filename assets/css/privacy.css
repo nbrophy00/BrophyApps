@@ -741,7 +741,7 @@ main.terms-content a:active {
 .bank-privacy-section li {
   margin-bottom: 0;
   padding: 0;
-  line-height: 1.3; /* Adjust this to control vertical spacing */
+  line-height: 1.3;
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
