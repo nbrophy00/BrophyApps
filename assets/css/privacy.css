@@ -748,7 +748,7 @@ main.terms-content a:active {
 
 .bank-privacy-section li a {
   display: inline;
-  line-height: 1.1;
+  line-height: 1.1 !important;
 }
 
 
