@@ -875,3 +875,6 @@ body.terms-page * {
 .spacer-lg {
   height: 1rem;
 }
+.spacer-xl {
+  height: 3rem;
+}
