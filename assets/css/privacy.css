@@ -723,6 +723,44 @@ main.terms-content a:active {
   color: inherit;
 }
 
+/* === Gray Section === */
+.gray-section {
+  background-color: #2e2e2e;
+  padding: 1.2rem 1rem 1rem 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 15px;
+}
+
+.gray-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.gray-section li {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.gray-section a {
+  letter-spacing: 0.001px;
+  line-height: 1.1;
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block; /* Ensures it behaves like a block element */
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.gray-section a:hover {
+  color: #f0f0f0 !important;
+}
+
+/* === Bank Privacy Section === */
 .bank-privacy-section {
   background-color: #2e2e2e;
   padding: 1.2rem 1rem 1rem 1.2rem;
