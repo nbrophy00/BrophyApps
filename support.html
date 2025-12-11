@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support | SongBank</title>
+  <title>Frequently Asked Questions | SongBank</title>
   <link rel="icon" href="assets/css/images/sb-favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/terms-privacy.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
@@ -15,7 +15,7 @@
     <header class="terms-header">
       <div id="menu-toggle">
         <img src="assets/css/images/menu.png" alt="Menu"
-          style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+             style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
       </div>
       <img id="header-logo" src="assets/css/images/logo.svg" alt="SongBank Logo" />
     </header>
@@ -28,143 +28,332 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="terms-of-service.html">Terms of Service</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="support.html">Support</a></li>
       </ul>
     </nav>
 
     <!-- Main Content -->
     <main class="terms-content">
-      <h1>SUPPORT</h1>
-
-      <h2>1. Frequently Asked Questions</h2>
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
 
       <!-- Getting Started -->
+      <h2>1. Getting Started</h2>
+
       <h3>What is SongBank?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank is a music-royalty aggregation and catalog-valuation app that helps you track income from multiple
-        royalty sources, analyze trends over time, and estimate the value of your catalog in one place.
+        SongBank is a music-royalty aggregation and catalog-valuation platform that helps songwriters, publishers,
+        producers, and rights holders track earnings, analyze revenue trends, and estimate catalog value—all in one place.
       </p>
 
       <div class="spacer-lg"></div>
+
       <h3>Who is SongBank for?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank is built for songwriters, artists, producers, publishers, and rights holders who receive music
-        royalties and want a clearer picture of how their catalog is performing.
+        SongBank is designed for anyone who receives royalties: songwriters, producers, artists, publishers, and rights
+        administrators.
       </p>
 
       <div class="spacer-lg"></div>
+
       <h3>What platforms does SongBank support?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank is available for iOS and Android. Your data is stored securely on your device and can sync to the
-        cloud so you can access it across devices.
-      </p>
-
-      <!-- Importing Statements -->
-      <div class="spacer-lg"></div>
-      <h3>Which royalty sources and file types can I import?</h3>
-      <div class="spacer-sm"></div>
-      <p>
-        SongBank supports CSV, TSV, and XLSX statements from major royalty providers such as ASCAP, BMI, SESAC,
-        SoundExchange, the MLC, Music Reports, DistroKid, TuneCore, OneRPM, and more.
+        SongBank is available for iOS and Android. Your data syncs securely across devices.
       </p>
 
       <div class="spacer-lg"></div>
-      <h3>What happens if I accidentally import the same statement twice?</h3>
+
+
+      <!-- Importing Royalty Statements -->
+      <h2>2. Importing Royalty Statements</h2>
+
+      <h3>Which royalty sources does SongBank support?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank checks each file using a unique fingerprint (MD5 hash). If a statement has already been imported,
-        it is automatically detected and skipped to prevent duplicate earnings.
+        SongBank supports major royalty providers including ASCAP, BMI, SESAC, SoundExchange, Music Reports, MLC,
+        Peermusic, BMG, Amplified, DistroKid, OneRPM, TuneCore, and more.
       </p>
 
       <div class="spacer-lg"></div>
-      <h3>Why do some very small amounts show as $0.00* instead of $0.00?</h3>
+
+      <h3>What formats can I import?</h3>
       <div class="spacer-sm"></div>
       <p>
-        When a royalty is greater than zero but less than one cent, SongBank displays it as $0.00* so you can
-        distinguish truly zero earnings from very small but non-zero income.
+        SongBank accepts CSV, TSV, and XLSX files from royalty statements.
       </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>How does SongBank match imported songs?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        SongBank uses title cleaning, normalization rules, and optional Spotify artwork matching to help unify song entries
+        across different royalty sources.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Why does SongBank ask me to enter the song title exactly as shown in the app?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        For Spotify artwork matching, SongBank uses your SongBank <code>titleClean</code> formatting. Exact matches ensure
+        automatic pairing with album artwork.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>What happens if I accidentally import a duplicate statement?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        SongBank automatically detects duplicates using an MD5 file hash and prevents double-imports.
+      </p>
+
+      <div class="spacer-lg"></div>
+
 
       <!-- Catalog Valuation -->
-      <div class="spacer-lg"></div>
-      <h3>How does SongBank estimate my catalog value?</h3>
+      <h2>3. Catalog Valuation</h2>
+
+      <h3>How does SongBank calculate my catalog valuation?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank calculates historical earnings and multi-year averages for your songs, then applies valuation
-        multiples commonly used in catalog deals. You can view these estimates for a single song, a group of songs,
-        or your entire catalog.
+        SongBank computes historical monthly earnings, 1–5 year averages, and applies user-selectable multiples commonly
+        used in catalog sales.
       </p>
 
       <div class="spacer-lg"></div>
-      <h3>Can I see trends over time for my catalog?</h3>
-      <div class="spacer-sm"></div>
-      <p>
-        Yes. SongBank lets you view earnings by month, year, source, and song so you can see how your catalog is
-        performing over time and which titles or income streams are driving the most value.
-      </p>
 
-      <!-- Artwork Matching -->
-      <div class="spacer-lg"></div>
-      <h3>How does album artwork matching work?</h3>
+      <h3>Can I see revenue trends over time?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank uses your song’s title formatting and optional Spotify links (or IDs such as ISRC/UPC) to match and
-        display album artwork. For the most accurate results, enter the song title exactly as it appears in the app
-        when adding or editing artwork.
+        Yes. SongBank analyzes total earnings, per-song earnings, and source contributions across any timeframe.
       </p>
 
       <div class="spacer-lg"></div>
-      <h3>Can I change the album artwork for a song?</h3>
+
+      <h3>Does SongBank support multiple catalog valuation scenarios?</h3>
+      <div class="spacer-sm"></div>
+      <p>Yes—SongBank can show valuations for:</p>
+      <section class="gray-section">
+        <ul>
+          <li><a>• A single title</a></li>
+          <li><a>• A subset of your titles</a></li>
+          <li><a>• Your entire catalog</a></li>
+        </ul>
+      </section>
+
+      <div class="spacer-lg"></div>
+
+
+      <!-- Album Artwork Matching -->
+      <h2>4. Album Artwork Matching</h2>
+
+      <h3>Where does SongBank get album artwork?</h3>
+      <div class="spacer-sm"></div>
+      <p>Artwork is retrieved through Spotify’s public API using:</p>
+      <section class="gray-section">
+        <ul>
+          <li><a>• Spotify URL</a></li>
+          <li><a>• Song ID (ISRC or UPC)</a></li>
+        </ul>
+      </section>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Can I edit or replace album artwork?</h3>
       <div class="spacer-sm"></div>
       <p>
-        Yes. On the Edit Artwork screen you can paste a new Spotify link to update the artwork. The title itself is
-        kept locked so that artwork continues to match the correct SongBank entry.
+        Yes. SongBank includes an Edit Artwork page where you can enter a new Spotify link. Titles are locked to maintain
+        consistent matching.
       </p>
 
-      <!-- Sync, Offline, Security -->
       <div class="spacer-lg"></div>
+
+      <h3>What if multiple songs share the same title?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        SongBank matches using <code>titleClean</code>, <code>songID</code>, and additional metadata when needed.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+
+      <!-- Sync & Data Storage -->
+      <h2>5. Sync &amp; Data Storage</h2>
+
+      <h3>Is my data stored locally or in the cloud?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        Both. SongBank uses ObjectBox local storage plus ObjectBox Sync to keep your data up to date across devices.
+      </p>
+
+      <div class="spacer-lg"></div>
+
       <h3>Does SongBank work offline?</h3>
       <div class="spacer-sm"></div>
       <p>
-        Yes. Your data is stored locally on your device, so you can view your catalog and past statements offline.
-        When you reconnect, changes can sync with the cloud if sync is enabled.
+        Yes. You can access your full catalog offline. Any changes are synced once you're online.
       </p>
 
       <div class="spacer-lg"></div>
-      <h3>How does SongBank keep my data secure?</h3>
+
+      <h3>Is my data encrypted?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank uses secure, encrypted connections for sync and relies on trusted authentication (such as Firebase
-        Auth) for login. Your password is never stored by SongBank itself.
+        Yes. All synced data uses end-to-end encrypted WebSocket connections (WSS). Local data is stored securely on-device.
       </p>
+
+      <div class="spacer-lg"></div>
+
 
       <!-- Notifications -->
+      <h2>6. Notifications</h2>
+
+      <h3>What notifications does SongBank send?</h3>
+      <div class="spacer-sm"></div>
+      <p>SongBank can notify you when:</p>
+      <section class="gray-section">
+        <ul>
+          <li><a>• New royalty statements are available</a></li>
+          <li><a>• Sync completes</a></li>
+          <li><a>• Your catalog valuation changes (coming soon)</a></li>
+        </ul>
+      </section>
+
       <div class="spacer-lg"></div>
-      <h3>What types of notifications can I receive?</h3>
+
+      <h3>Can I disable notifications?</h3>
       <div class="spacer-sm"></div>
       <p>
-        SongBank can notify you when new royalty statements are imported, when key catalog metrics change, or when
-        certain in-app events occur. You can manage these notifications in your device and app settings.
+        Yes, you can manage notification preferences directly inside the app.
       </p>
 
-      <!-- Billing -->
       <div class="spacer-lg"></div>
-      <h3>How do I manage or cancel my subscription?</h3>
+
+
+      <!-- Account & Security -->
+      <h2>7. Account &amp; Security</h2>
+
+      <h3>How does SongBank authenticate users?</h3>
       <div class="spacer-sm"></div>
       <p>
-        Subscriptions are managed through the App Store or Google Play Store on your device. From there you can
-        change plans, update payment methods, or cancel at any time. If you reinstall the app, use “Restore
-        Purchases” to refresh your access.
+        SongBank uses Firebase Authentication with support for iCloud Keychain and Android autofill for faster sign-ins.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Do you store my password?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        No. SongBank never stores your password—authentication is handled securely by Firebase.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>What happens if I switch phones?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        Simply sign into your account. Your data syncs automatically.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+
+      <!-- Troubleshooting -->
+      <h2>8. Troubleshooting</h2>
+
+      <h3>My artwork isn't showing. What should I do?</h3>
+      <div class="spacer-sm"></div>
+      <p>Make sure:</p>
+      <section class="gray-section">
+        <ul>
+          <li><a>• The title matches exactly how it appears in SongBank</a></li>
+          <li><a>• The Spotify URL or ISRC/UPC is correct</a></li>
+          <li><a>• Your internet connection is active</a></li>
+        </ul>
+      </section>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Some of my earnings show “&lt; $0.01” — why?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        This means the royalty provider reported an amount greater than zero but below one cent.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Why do some statement dates look different across sources?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        SongBank automatically normalizes dates using cleaned formats and quarter-based mapping for consistent reporting.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+
+      <!-- Billing & Subscription -->
+      <h2>9. Billing &amp; Subscription</h2>
+
+      <h3>Is SongBank free to use?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        SongBank includes a free tier and optional subscription for premium features (depending on your pricing model).
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>How do I restore purchases?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        You can use <strong>Restore Purchases</strong> within the app. SongBank automatically refreshes your subscription status.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+      <h3>How do I cancel my subscription?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        Subscriptions are managed through the App Store or Google Play Store.
+      </p>
+
+      <div class="spacer-lg"></div>
+
+
+      <!-- General -->
+      <h2>10. General</h2>
+
+      <h3>Can SongBank help me prepare for a catalog sale?</h3>
+      <div class="spacer-sm"></div>
+      <p>Yes—SongBank provides clean, ready-to-share data showing:</p>
+      <section class="gray-section">
+        <ul>
+          <li><a>• Year-over-year earnings</a></li>
+          <li><a>• Multi-year averages</a></li>
+          <li><a>• Source breakdowns</a></li>
+          <li><a>• Top-performing songs</a></li>
+        </ul>
+      </section>
+
+      <div class="spacer-lg"></div>
+
+      <h3>Can I export my data?</h3>
+      <div class="spacer-sm"></div>
+      <p>
+        Yes. You can export clean datasets or royalty summaries for your records.
       </p>
 
       <div class="terms-spacer-3xl"></div>
 
-      <h2>2. Contact Information</h2>
+      <!-- Contact Info -->
+      <h2>11. Contact Information</h2>
       <p class="contact-info">
         For questions or concerns, contact us at
         <a href="mailto:support@songbank-app.com" class="support-link">support@songbank-app.com</a>.
       </p>
+
       <div class="spacer-xl"></div>
 
       <!-- Store Download Section -->
@@ -196,6 +385,7 @@
           <a href="https://medium.com"><img src="assets//css/images/icon-medium.svg" alt="Medium" /></a>
         </div>
       </footer>
+
     </main>
   </div>
 
