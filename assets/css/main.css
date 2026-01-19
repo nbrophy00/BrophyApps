@@ -1323,3 +1323,168 @@ main.terms-content a,
 #side-drawer.open {
 	left: 0;
 }
+
+/* =========================================
+   HOMEPAGE OVERRIDES
+   - scrollable
+   - background matches original splash
+   - bottom vignette pinned to content bottom
+   ========================================= */
+
+/* Prevent horizontal wiggle on homepage only */
+body.index-page,
+body.index-page #wrapper,
+body.index-page #main {
+  overflow-x: hidden !important;
+}
+
+/* Allow vertical scroll on homepage */
+body.index-page {
+  overflow-y: auto !important;
+  -ms-overflow-style: none;  /* IE/Edge legacy */
+  scrollbar-width: none;     /* Firefox */
+}
+body.index-page::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;             /* Safari/Chrome */
+}
+
+/* Make wrapper/main flow (template uses fixed positioning) */
+body.index-page #wrapper {
+  position: relative !important;
+  min-height: 100vh !important;
+  height: auto !important;
+}
+
+body.index-page #main {
+  position: relative !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding-bottom: 40px !important;
+  background: transparent !important; /* let bg/vignette show through */
+  z-index: 2;
+}
+
+/* Remove vertical-centering helper from original splash */
+body.index-page #main:before {
+  display: none !important;
+}
+
+/* Header spacing */
+body.index-page #header {
+  top: 0 !important;          /* cancels original top:-1em */
+  margin-top: 50px !important;
+}
+body.index-page #header p {
+  margin-bottom: 2em;
+}
+@media (max-width: 736px) {
+  body.index-page #header {
+    margin-top: 60px !important;
+  }
+}
+
+/* --- Background layers --- */
+body.index-page #bg {
+  /* kill template animation + huge width */
+  animation: none !important;
+  -webkit-animation: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+
+  width: 100% !important; /* overrides template 6750px */
+  left: 0 !important;
+  right: 0 !important;
+
+  position: fixed !important;
+  inset: 0 !important;
+  opacity: 1 !important;
+  z-index: 0;
+
+  /* dark -> mid gray band -> gray to bottom */
+  background: linear-gradient(
+    to bottom,
+    #171717 0%,
+    #171717 23%,
+    #232323 23%,
+    #232323 100%
+  ) !important;
+}
+
+/* Bottom vignette pinned to page bottom (no gap) */
+body.index-page #wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 280px;
+  pointer-events: none;
+  z-index: 1; /* above bg, below content */
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.60) 0%,
+    rgba(0, 0, 0, 0.42) 22%,
+    rgba(0, 0, 0, 0.22) 48%,
+    rgba(0, 0, 0, 0.10) 68%,
+    rgba(0, 0, 0, 0.00) 100%
+  );
+}
+
+/* Footer should flow (not absolute) */
+body.index-page #footer {
+  position: relative !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 24px 0 !important;
+  background-image: none !important;
+}
+
+/* --- Video --- */
+.video-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 18px auto 48px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.promo-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tap for sound badge (bottom-left per your latest preference) */
+.video-sound-hint {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  background: rgba(0,0,0,0.45);
+  padding: 6px 10px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Mobile: stack App Store / Google Play badges */
+@media (max-width: 736px) {
+  body.index-page #header nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+  body.index-page #header nav li {
+    width: auto !important
+    ;
+    height: auto !important;
+    line-height: normal !important;
+    margin: 0 !important;
+  }
+}
+
+
