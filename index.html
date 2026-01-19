@@ -106,6 +106,17 @@
   }
 </script>
 
+<script>
+  const soundHint = document.querySelector('.video-sound-hint');
+
+  if (soundHint) {
+    setTimeout(() => {
+      soundHint.classList.add('fade-out');
+    }, 4000); // 3.5 seconds
+  }
+</script>
+
+
 </body>
 
 </html>

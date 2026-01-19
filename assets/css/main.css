@@ -1468,7 +1468,14 @@ body.index-page #footer {
   padding: 6px 10px;
   border-radius: 10px;
   pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.6s ease;
 }
+
+.video-sound-hint.fade-out {
+  opacity: 0;
+}
+
 
 /* Mobile: stack App Store / Google Play badges */
 @media (max-width: 736px) {
