@@ -1457,6 +1457,48 @@ body.index-page #footer {
   display: block;
 }
 
+#header .video-wrapper + p {
+  font-size: 0.95em;  /* smaller than your hero line */
+  opacity: 0.65;
+  margin: -28px auto 36px;
+  max-width: 720px;
+  line-height: 1.55;
+  padding: 0 18px;
+}
+
+.feature-list {
+  margin: 36px auto 42px;
+  padding: 0;
+  max-width: 720px;
+  list-style: none;
+  text-align: center;
+}
+
+.feature-list li {
+  font-size: 0.95em;
+  line-height: 1.6;
+  opacity: 0.65;
+  margin: 8px 0;
+  padding-left: 0;
+}
+
+/*.feature-list li::before {
+  content: "•";
+  margin-right: 8px;
+  opacity: 0.5;
+}*/
+
+@media (max-width: 736px) {
+  .feature-list {
+    max-width: 520px;
+    margin: 20px auto 28px;
+  }
+
+  .feature-list li {
+    font-size: 0.9em;
+  }
+}
+
 /* Tap for sound badge (bottom-left per your latest preference) */
 .video-sound-hint {
   position: absolute;
