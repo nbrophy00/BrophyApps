@@ -1354,7 +1354,7 @@ body.index-page::-webkit-scrollbar {
 body.index-page #wrapper {
   position: relative !important;
   min-height: 100vh !important;
-  height: auto !important;
+  /*height: auto !important;*/
 }
 
 body.index-page #main {
@@ -1365,6 +1365,12 @@ body.index-page #main {
   background: transparent !important; /* let bg/vignette show through */
   z-index: 2;
 }
+
+body.index-page #overlay {
+  position: absolute !important;
+  inset: 0 !important;
+}
+
 
 /* Remove vertical-centering helper from original splash */
 body.index-page #main:before {
@@ -1387,22 +1393,14 @@ body.index-page #header p {
 
 /* --- Background layers --- */
 body.index-page #bg {
-  /* kill template animation + huge width */
+  position: absolute !important;
+  inset: 0 !important;        /* replaces top/left/width/height */
+  width: auto !important;
+  height: auto !important;
+
   animation: none !important;
-  -webkit-animation: none !important;
   transform: none !important;
-  -webkit-transform: none !important;
 
-  width: 100% !important; /* overrides template 6750px */
-  left: 0 !important;
-  right: 0 !important;
-
-  position: fixed !important;
-  inset: 0 !important;
-  opacity: 1 !important;
-  z-index: 0;
-
-  /* dark -> mid gray band -> gray to bottom */
   background: linear-gradient(
     to bottom,
     #171717 0%,
@@ -1410,7 +1408,10 @@ body.index-page #bg {
     #232323 23%,
     #232323 100%
   ) !important;
+
+  z-index: 0;
 }
+
 
 /* Bottom vignette pinned to page bottom (no gap) */
 body.index-page #wrapper::after {
@@ -1536,4 +1537,21 @@ body.index-page #footer {
   }
 }
 
+/* Hide scrollbars on homepage (covers html + body + common scroll containers) */
+html.index-page,
+body.index-page,
+body.index-page #wrapper,
+body.index-page #main {
+  scrollbar-width: none !important;      /* Firefox */
+  -ms-overflow-style: none !important;   /* IE/old Edge */
+}
+
+html.index-page::-webkit-scrollbar,
+body.index-page::-webkit-scrollbar,
+body.index-page #wrapper::-webkit-scrollbar,
+body.index-page #main::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
 
