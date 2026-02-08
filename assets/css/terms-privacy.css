@@ -938,3 +938,10 @@ body.terms-page * {
 .terms-spacer-3xl {
   height: 2.55rem;
 }
+
+.note-title {
+  display: inline-block;
+  margin-bottom: 0.25rem; /* ~4px */
+  font-weight: 500;
+  color: #ababab;
+}
