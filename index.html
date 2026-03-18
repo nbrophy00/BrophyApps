@@ -16,8 +16,7 @@
 		<!-- Transparent Header with Menu -->
 		<div class="index-header">
 			<div id="menu-toggle">
-				<img src="assets/css/images/menu.png" alt="Menu"
-					style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+				<img src="assets/css/images/menu.png" alt="Menu" class="non-selectable" />
 			</div>
 		</div>
 		<div class="divider"></div>
@@ -39,8 +38,8 @@
 			<!-- Header -->
 			<header id="header">
 				<h1>
-					<img src="assets/css/images/logo.svg" alt="SongBank"
-					style="max-width: 80%; height: auto; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+					<img src="assets/css/images/logo.svg" alt="SongBank" class="non-selectable"
+					style="max-width: 80%; height: auto;" />
 				</h1>
 
 				<p>Income Management&nbsp; •&nbsp; Royalty Aggregation&nbsp; •&nbsp; Catalog Valuation</p>
@@ -77,18 +76,12 @@
 		</div>
 	</div>
 
+	<script src="assets/js/drawer.js"></script>
 	<script>
 		window.onload = function () {
 			document.body.classList.remove('is-preload');
 		};
 		window.onorientationchange = function () { document.body.scrollTop = 0; };
-
-		// Toggle drawer logic
-		const toggleButton = document.getElementById('menu-toggle');
-		const drawer = document.getElementById('side-drawer');
-		toggleButton.addEventListener('click', () => {
-			drawer.classList.toggle('open');
-		});
 	</script>
 	<script>
   const video = document.querySelector('.promo-video');

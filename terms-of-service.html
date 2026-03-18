@@ -14,8 +14,7 @@
   <!-- Header -->
   <header class="terms-header">
     <div id="menu-toggle">
-      <img src="assets/css/images/menu.png" alt="Menu"
-			style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+      <img src="assets/css/images/menu.png" alt="Menu" class="non-selectable" />
     </div>
     <img id="header-logo" src="assets/css/images/logo.svg" alt="SongBank Logo" />
   </header>
@@ -401,7 +400,7 @@
 
     <p>SongBank integrates with a range of services to enhance your experience and allow you to import royalty statements and display music-related information. This includes data from services such as YouTube, SoundCloud, Spotify, Apple Music, Deezer, Facebook, Beatport, Traxsource, and others. We may also support importing financial and royalty statement data from music rights organizations and distributors such as ASCAP, BMI, SESAC, DistroKid, OneRPM, Tunecore, and others. While we are not affiliated with or endorsed by these services, we comply with their respective privacy policies and terms of service. By using SongBank, you agree to the privacy terms and policies of these providers where applicable.</p>
 
-      <section class="bank-privacy-section">
+      <section class="gray-section">
         <ul>
           <li><a href="https://www.google.com/policies/privacy" target="_blank">• Amplified Admin Privacy Policy</a></li>
           <li><a href="https://www.ascap.com/help/legal/privacy-policy" target="_blank">• ASCAP Privacy Policy</a></li>
@@ -450,23 +449,16 @@
   <footer class="terms-footer">
     <p>&copy; 2026 SongBank</p>
     <div class="footer-icons">
-      <!-- <a href="https://www.facebook.com"><img src="assets//css/images/icon-facebook.svg" alt="Facebook" /></a> -->
-          <a href="https://www.instagram.com/songbank.app/"><img src="assets//css/images/icon-instagram.svg" alt="Instagram" /></a>
-          <!-- <a href="https://x.com"><img src="assets//css/images/icon-x.svg" alt="X / Twitter" /></a> -->
-          <!-- <a href="https://medium.com"><img src="assets//css/images/icon-medium.svg" alt="Medium" /></a> -->
+      <!-- <a href="https://www.facebook.com"><img src="assets/css/images/icon-facebook.svg" alt="Facebook" /></a> -->
+          <a href="https://www.instagram.com/songbank.app/"><img src="assets/css/images/icon-instagram.svg" alt="Instagram" /></a>
+          <!-- <a href="https://x.com"><img src="assets/css/images/icon-x.svg" alt="X / Twitter" /></a> -->
+          <!-- <a href="https://medium.com"><img src="assets/css/images/icon-medium.svg" alt="Medium" /></a> -->
     </div>
   </footer>
 
   </main>
   </div>
 
-  <!-- JS for drawer -->
-  <script>
-    const toggleButton = document.getElementById('menu-toggle');
-    const drawer = document.getElementById('side-drawer');
-    toggleButton.addEventListener('click', () => {
-      drawer.classList.toggle('open');
-    });
-  </script>
+  <script src="assets/js/drawer.js"></script>
 </body>
 </html>

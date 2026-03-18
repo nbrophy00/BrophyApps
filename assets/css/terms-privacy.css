@@ -576,6 +576,12 @@ main.terms-content a,
   -webkit-touch-callout: none;
 }
 
+.non-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 body.terms-page {
   overflow: hidden;
 }
@@ -760,38 +766,6 @@ main.terms-content a:active {
   color: #f0f0f0 !important;
 }
 
-/* === Bank Privacy Section === */
-.bank-privacy-section {
-  background-color: #2e2e2e;
-  padding: 1.2rem 1rem 1rem 1.2rem;
-  margin-top: 1.2rem;
-  font-size: 15px;
-}
-
-.bank-privacy-section ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  white-space: normal;
-  overflow-wrap: break-word;
-}
-
-.bank-privacy-section li {
-  margin-bottom: 1rem;
-  padding: 0;
-}
-
-.bank-privacy-section a {
-  letter-spacing: 0.001px;
-  line-height: 1.1;
-  color: #bbbbbb;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  display: block; /* Ensures it behaves like a block element */
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
 
 .contact-info {
   margin-bottom: 2.5rem;

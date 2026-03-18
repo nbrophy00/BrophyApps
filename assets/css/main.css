@@ -1269,6 +1269,12 @@ main.terms-content a,
 	transition: opacity 0.2s ease;
 }
 
+.non-selectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
 #menu-toggle:active img {
 	opacity: 0.5;
 }
