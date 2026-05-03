@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html class="index-page">
+
+<head>
+  <title>SongBank | Exclusive ASCAP Member Offer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="icon" type="image/png" href="assets/css/images/sb-favicon.png">
+  <style>
+    /* ASCAP offer page overrides */
+    #header h1 {
+      margin-bottom: 0.4em;
+    }
+
+    .ascap-logo {
+      max-width: 160px;
+      height: auto;
+      margin: 0 auto 1.2em auto;
+      display: block;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .ascap-divider {
+      width: 48px;
+      height: 1px;
+      background: rgba(240,240,240,0.3);
+      margin: 0.6em auto 1.1em auto;
+    }
+
+    .ascap-welcome {
+      font-size: 0.85em;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.6);
+      margin-bottom: 0.25em;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    .ascap-headline {
+      font-size: 1.05em;
+      line-height: 1.6em;
+      color: rgba(240,240,240,0.9);
+      margin: 0 auto 1.6em auto !important;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+
+    .offer-cards {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      max-width: 760px;
+      margin: 0 auto 1.8em auto;
+    }
+
+    .offer-card {
+      flex: 1;
+    }
+
+    .offer-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 10px;
+      padding: 1.1em 1.3em;
+      text-align: left;
+    }
+
+    .offer-card-label {
+      font-size: 0.72em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.5);
+      margin-bottom: 0.3em;
+    }
+
+    .offer-card-desc {
+      font-size: 0.88em;
+      color: rgba(240,240,240,0.8);
+      margin-bottom: 0.75em;
+      line-height: 1.5em;
+    }
+
+    .offer-code {
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      background: rgba(15, 143, 204, 0.2);
+      border: 1px solid rgba(15, 143, 204, 0.5);
+      border-radius: 6px;
+      padding: 0.35em 0.8em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6em;
+      text-align: center;
+      margin-bottom: 0.75em;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .offer-code:hover {
+      background: rgba(15, 143, 204, 0.35);
+    }
+
+    .offer-code:active {
+      opacity: 0.6;
+    }
+
+    .offer-code .copy-label {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 0.7em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      font-weight: 400;
+    }
+
+    .offer-code.copied {
+      background: rgba(60, 180, 100, 0.3);
+      border-color: rgba(60, 180, 100, 0.6);
+    }
+
+    .badge-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.6em;
+      margin-top: 0.85em;
+    }
+
+    .appstore-btn {
+      display: block;
+    }
+
+    .appstore-btn img {
+      height: 48px;
+      border-radius: 7px;
+      border: 1px solid rgba(166,166,166,0.4);
+      transition: all 0.25s ease-in-out;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .appstore-btn img:hover {
+      border-color: #0f8fcc;
+      transform: scale(1.04);
+    }
+
+    .ascap-instructions {
+      font-size: 0.78em;
+      color: rgba(240,240,240,0.45);
+      line-height: 1.7em;
+      max-width: 580px;
+      width: 100%;
+      margin: 0 auto 1.8em auto !important;
+      text-align: center;
+      display: block;
+    }
+
+    @media screen and (max-width: 480px) {
+      .offer-cards {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      .ascap-headline {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="is-preload index-page">
+  <div id="wrapper">
+
+    <!-- Transparent Header with Menu -->
+    <div class="index-header">
+      <div id="menu-toggle">
+        <img src="assets/css/images/menu.png" alt="Menu"
+          style="-webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Side Drawer -->
+    <nav id="side-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="delete-account.html">Delete Account</a></li>
+      </ul>
+    </nav>
+
+    <div id="bg"></div>
+    <div id="overlay"></div>
+
+    <div id="main">
+      <header id="header">
+
+        <!-- SongBank Logo -->
+        <h1>
+          <img src="assets/css/images/logo.svg" alt="SongBank"
+            style="max-width: 80%; height: auto; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
+        </h1>
+
+        <!-- ASCAP Partnership -->
+        <img class="ascap-logo" src="assets/css/images/ASCAP_Logo.png" alt="ASCAP" />
+
+        <p class="ascap-welcome">Exclusive Member Offer</p>
+        <p class="ascap-headline">
+          Welcome, ASCAP members. As part of our partnership, you're entitled to an exclusive discount on SongBank. Copy a code below and enter it at checkout, or simply click the App Store badge to redeem directly.
+        </p>
+
+        <!-- Offer Cards -->
+        <div class="offer-cards">
+
+          <!-- Monthly -->
+          <div class="offer-card">
+            <div class="offer-card-label">Monthly Plan</div>
+            <div class="offer-card-desc">50% off every month for 12 months — flexibility at half the price.</div>
+            <span class="offer-code" id="code-monthly" onclick="copyCode('code-monthly', this)">ASCAPMONTHLY <span class="copy-label">copy</span></span>
+            <div class="badge-row">
+              <a class="appstore-btn" href="https://apps.apple.com/redeem?ctx=offercodes&id=6745860941&code=ASCAPMONTHLY" target="_blank" rel="noopener">
+                <img src="assets/css/images/app_store.png" alt="Download on the App Store" />
+              </a>
+              <a class="appstore-btn" href="https://play.google.com/store/apps" target="_blank" rel="noopener">
+                <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Annual -->
+          <div class="offer-card">
+            <div class="offer-card-label">Annual Plan</div>
+            <div class="offer-card-desc">50% off your first year — pay once, track all year.</div>
+            <span class="offer-code" id="code-annual" onclick="copyCode('code-annual', this)">ASCAPANNUAL <span class="copy-label">copy</span></span>
+            <div class="badge-row">
+              <a class="appstore-btn" href="https://apps.apple.com/redeem?ctx=offercodes&id=6745860941&code=ASCAPANNUAL" target="_blank" rel="noopener">
+                <img src="assets/css/images/app_store.png" alt="Download on the App Store" />
+              </a>
+              <a class="appstore-btn" href="https://play.google.com/store/apps" target="_blank" rel="noopener">
+                <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="ascap-instructions">
+          To redeem from within SongBank click "Redeem Code" before signing up for your subscription.
+        </p>
+
+
+      </header>
+
+      <footer id="footer">
+        <span class="copyright">&copy; SongBank : v.1.1.0&nbsp;2026</span>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      document.body.classList.remove('is-preload');
+    };
+    window.onorientationchange = function () { document.body.scrollTop = 0; };
+
+    const toggleButton = document.getElementById('menu-toggle');
+    const drawer = document.getElementById('side-drawer');
+    toggleButton.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+
+    function copyCode(id, el) {
+      const code = id === 'code-monthly' ? 'ASCAPMONTHLY' : 'ASCAPANNUAL';
+      navigator.clipboard.writeText(code).then(() => {
+        el.classList.add('copied');
+        const label = el.querySelector('.copy-label');
+        label.textContent = 'copied!';
+        setTimeout(() => {
+          el.classList.remove('copied');
+          label.textContent = 'copy';
+        }, 2000);
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>
