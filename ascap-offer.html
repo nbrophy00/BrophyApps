@@ -57,7 +57,7 @@
       display: flex;
       flex-direction: row;
       gap: 1em;
-      max-width: 760px;
+      max-width: 400px;
       margin: 0 auto 1.8em auto;
     }
 
@@ -133,34 +133,7 @@
       border-color: rgba(60, 180, 100, 0.6);
     }
 
-    .badge-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 0.6em;
-      margin-top: 0.85em;
-    }
-
-    .appstore-btn {
-      display: block;
-    }
-
-    .appstore-btn img {
-      height: 48px;
-      border-radius: 7px;
-      border: 1px solid rgba(166,166,166,0.4);
-      transition: all 0.25s ease-in-out;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-
-    .appstore-btn img:hover {
-      border-color: #0f8fcc;
-      transform: scale(1.04);
-    }
-
-    .video-wrapper {
+.video-wrapper {
       margin: 1.6em auto 1.6em auto;
     }
 
@@ -228,7 +201,7 @@
 
         <p class="ascap-welcome">Exclusive Member Offer</p>
         <p class="ascap-headline">
-          Welcome, ASCAP members. As part of our partnership, you're entitled to an exclusive discount on SongBank. Copy a code below and enter it at checkout, or simply click the App Store badge to redeem directly.
+          Welcome, ASCAP members. As part of our partnership, you're entitled to an exclusive member rate on SongBank. Copy your member code below, then enter it in SongBank before subscribing.
         </p>
 
         <!-- Promo Video -->
@@ -238,44 +211,33 @@
           </video>
         </div>
 
-        <!-- Offer Cards -->
+        <!-- Offer Card -->
         <div class="offer-cards">
-
-          <!-- Monthly -->
           <div class="offer-card">
-            <div class="offer-card-label">Monthly Plan</div>
-            <div class="offer-card-desc">50% off every month for 12 months — flexibility at half the price.</div>
-            <span class="offer-code" id="code-monthly" onclick="copyCode('code-monthly', this)">ASCAPMONTHLY <span class="copy-label">copy</span></span>
-            <div class="badge-row">
-              <a class="appstore-btn" href="https://apps.apple.com/redeem?ctx=offercodes&id=6745860941&code=ASCAPMONTHLY" target="_blank" rel="noopener">
-                <img src="assets/css/images/app_store.png" alt="Download on the App Store" />
-              </a>
-              <!-- <a class="appstore-btn" href="https://play.google.com/store/apps" target="_blank" rel="noopener">
-                <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" />
-              </a> -->
-            </div>
+            <div class="offer-card-label">ASCAP Member Discount</div>
+            <div class="offer-card-desc">20% off your subscription — every billing period, for as long as you subscribe.</div>
+            <span class="offer-code" id="code-ascap" onclick="copyCode('code-ascap', this)">ASCAP2026 <span class="copy-label">copy</span></span>
           </div>
-
-          <!-- Annual -->
-          <div class="offer-card">
-            <div class="offer-card-label">Annual Plan</div>
-            <div class="offer-card-desc">50% off your first year — pay once, track all year.</div>
-            <span class="offer-code" id="code-annual" onclick="copyCode('code-annual', this)">ASCAPANNUAL <span class="copy-label">copy</span></span>
-            <div class="badge-row">
-              <a class="appstore-btn" href="https://apps.apple.com/redeem?ctx=offercodes&id=6745860941&code=ASCAPANNUAL" target="_blank" rel="noopener">
-                <img src="assets/css/images/app_store.png" alt="Download on the App Store" />
-              </a>
-              <!-- <a class="appstore-btn" href="https://play.google.com/store/apps" target="_blank" rel="noopener">
-                <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" />
-              </a> -->
-            </div>
-          </div>
-
         </div>
 
         <p class="ascap-instructions">
-          To redeem from within SongBank click "Redeem Code" before signing up for your subscription.
+          Download and install SongBank, then create an account. Once signed in, select "Redeem a Code" before choosing a subscription to apply your discount.
         </p>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="https://apps.apple.com/us/app/songbank/id6745860941" target="_blank" rel="noopener">
+                <img src="assets/css/images/app_store.png" alt="Download on the App Store" style="height: 55px;" />
+              </a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.songbank.app&hl=en_US" target="_blank" rel="noopener">
+                <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" style="height: 55px;" />
+              </a>
+            </li>
+          </ul>
+        </nav>
 
       </header>
 
@@ -311,7 +273,7 @@
     }
 
     function copyCode(id, el) {
-      const code = id === 'code-monthly' ? 'ASCAPMONTHLY' : 'ASCAPANNUAL';
+      const code = 'ASCAP2026';
       navigator.clipboard.writeText(code).then(() => {
         el.classList.add('copied');
         const label = el.querySelector('.copy-label');
