@@ -616,6 +616,7 @@ body.terms-page {
 main.terms-content {
   flex-grow: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem;
   background-color: #171717;
   color: #f0f0f0;
@@ -810,8 +811,8 @@ body.terms-page * {
 .store-download-container,
 .terms-footer,
 .terms-divider {
-  width: 100vw;
-  margin-left: calc(-1 * (100vw - 100%) / 2);
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
   background-color: #0f0f0f;
 }
 
