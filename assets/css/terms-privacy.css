@@ -582,8 +582,9 @@ main.terms-content a,
   user-select: none;
 }
 
+html,
 body.terms-page {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .terms-wrapper {
