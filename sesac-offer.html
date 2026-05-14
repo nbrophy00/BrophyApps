@@ -2,19 +2,19 @@
 <html class="index-page">
 
 <head>
-  <title>SongBank | Exclusive ASCAP Member Offer</title>
+  <title>SongBank | Exclusive SESAC Member Offer</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <link rel="icon" type="image/png" href="assets/css/images/sb-favicon.png">
   <style>
-    /* ASCAP offer page overrides */
+    /* SESAC offer page overrides */
     #header h1 {
       margin-bottom: 0.4em;
     }
 
-    .ascap-logo {
+    .sesac-logo {
       max-width: 160px;
       height: auto;
       margin: 0 auto 1.2em auto;
@@ -24,14 +24,7 @@
       user-select: none;
     }
 
-    .ascap-divider {
-      width: 48px;
-      height: 1px;
-      background: rgba(240,240,240,0.3);
-      margin: 0.6em auto 1.1em auto;
-    }
-
-    .ascap-welcome {
+    .sesac-welcome {
       font-size: 0.85em;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -42,7 +35,7 @@
       width: 100%;
     }
 
-    .ascap-headline {
+    .sesac-headline {
       font-size: 1.05em;
       line-height: 1.6em;
       color: rgba(240,240,240,0.9);
@@ -133,11 +126,11 @@
       border-color: rgba(60, 180, 100, 0.6);
     }
 
-.video-wrapper {
+    .video-wrapper {
       margin: 1.6em auto 1.6em auto;
     }
 
-    .ascap-instructions {
+    .sesac-instructions {
       font-size: 0.78em;
       color: rgba(240,240,240,0.75);
       line-height: 1.7em;
@@ -153,7 +146,7 @@
         flex-direction: column;
         max-width: 100%;
       }
-      .ascap-headline {
+      .sesac-headline {
         max-width: 100%;
       }
     }
@@ -196,34 +189,34 @@
             style="max-width: 80%; height: auto; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;" />
         </h1>
 
-        <!-- ASCAP Partnership -->
-        <img class="ascap-logo" src="assets/css/images/ASCAP_Logo.png" alt="ASCAP" />
+        <!-- SESAC Partnership -->
+        <img class="sesac-logo" src="assets/css/images/SESAC_Logo.png" alt="SESAC" />
 
-        <p class="ascap-welcome">Exclusive ASCAP Member Offer</p>
-        <p class="ascap-headline">
-          Welcome, ASCAP members. As part of our partnership, you receive exclusive pricing on SongBank.
-          Copy the code below and redeem it in the SongBank app before subscribing.
+        <p class="sesac-welcome">Exclusive SESAC Member Offer</p>
+        <p class="sesac-headline">
+          Welcome, SESAC members. As part of our partnership, you receive exclusive pricing on SongBank.
+          Copy the member code below, then enter it in SongBank before subscribing.
         </p>
 
         <!-- Promo Video -->
         <div class="video-wrapper">
           <video class="promo-video" autoplay muted loop playsinline>
-            <source src="assets/css/videos/songbank-promo.mp4" type="video/mp4" />
+            <source src="assets/css/videos/songbank-promo-no-GooglePlay.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Offer Card -->
         <div class="offer-cards">
           <div class="offer-card">
-            <div class="offer-card-label">ASCAP Member Discount</div>
-            <div class="offer-card-desc">25% off any SongBank subscription — monthly or annual.</div>
-            <span class="offer-code" id="code-ascap" onclick="copyCode('code-ascap', this)">ASCAP25 <span class="copy-label">copy</span></span>
+            <div class="offer-card-label">SESAC Member Discount</div>
+            <div class="offer-card-desc">25% off your subscription — every billing period, for as long as you subscribe.</div>
+            <span class="offer-code" id="code-sesac" onclick="copyCode('code-sesac', this)">SESAC25 <span class="copy-label">copy</span></span>
           </div>
         </div>
 
-        <p class="ascap-instructions">
+        <p class="sesac-instructions">
           Download SongBank and create your account.<br>
-          Before subscribing, select “Redeem a Code” to apply your ASCAP member discount.
+          Before subscribing, select "Redeem a Code" to apply your SESAC member discount.
         </p>
 
         <nav>
@@ -244,7 +237,7 @@
       </header>
 
       <footer id="footer">
-        <span class="copyright">&copy; SongBank : v.1.1.0&nbsp;2026</span>
+        <span class="copyright">&copy; SongBank : v.1.1.1&nbsp;2026</span>
       </footer>
     </div>
   </div>
@@ -275,7 +268,7 @@
     }
 
     function copyCode(id, el) {
-      const code = 'ASCAP25';
+      const code = 'SESAC25';
       navigator.clipboard.writeText(code).then(() => {
         el.classList.add('copied');
         const label = el.querySelector('.copy-label');

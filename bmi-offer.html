@@ -201,7 +201,7 @@
         <!-- Promo Video -->
         <div class="video-wrapper">
           <video class="promo-video" autoplay muted loop playsinline>
-            <source src="assets/css/videos/songbank-promo-no-GooglePlay.mp4" type="video/mp4" />
+            <source src="assets/css/videos/songbank-promo.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -258,11 +258,11 @@
     if (video) {
       video.addEventListener('click', async () => {
         try {
-          video.muted = false;
+          video.muted = !video.muted;
           video.volume = 1.0;
           await video.play();
         } catch (e) {
-          console.log('Unmute/play failed:', e);
+          console.log('Mute toggle failed:', e);
         }
       });
     }
