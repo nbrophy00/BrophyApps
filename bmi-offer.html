@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <link rel="icon" type="image/png" href="assets/css/images/sb-favicon.png">
+
+  <!-- Google tag (gtag.js) — BMI Spark partner-benefit metrics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKW243L45W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VKW243L45W');
+  </script>
+
   <style>
     /* BMI offer page overrides */
     #header h1 {
@@ -222,12 +232,12 @@
         <nav>
           <ul>
             <li>
-              <a href="https://apps.apple.com/us/app/songbank/id6745860941" target="_blank" rel="noopener">
+              <a href="https://apps.apple.com/us/app/songbank/id6745860941" target="_blank" rel="noopener" onclick="trackBmiEvent('bmi_offer_appstore_click')">
                 <img src="assets/css/images/app_store.png" alt="Download on the App Store" style="height: 55px;" />
               </a>
             </li>
             <li>
-              <a href="https://play.google.com/store/apps/details?id=com.songbank.app&hl=en_US" target="_blank" rel="noopener">
+              <a href="https://play.google.com/store/apps/details?id=com.songbank.app&hl=en_US" target="_blank" rel="noopener" onclick="trackBmiEvent('bmi_offer_playstore_click')">
                 <img src="assets/css/images/google_play_store.png" alt="Get it on Google Play" style="height: 55px;" />
               </a>
             </li>
@@ -273,11 +283,18 @@
         el.classList.add('copied');
         const label = el.querySelector('.copy-label');
         label.textContent = 'copied!';
+        trackBmiEvent('bmi_offer_code_copied');
         setTimeout(() => {
           el.classList.remove('copied');
           label.textContent = 'copy';
         }, 2000);
       });
+    }
+
+    function trackBmiEvent(eventName) {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName);
+      }
     }
 
   </script>
